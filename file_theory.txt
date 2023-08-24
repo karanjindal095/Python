@@ -1,0 +1,34 @@
+# open() = opens file
+open("folder_name/file name", "mode")
+f = open('python/myfile27.txt','r')
+
+mode = it is a parameter which tells the type of file should open
+
+#  The  mode can be :
+ 01 'r' = for reading
+ 02 'w' = for writing
+ 03 'a' = for appending
+
+# Modes in file :
+There are various types of modes to open a file
+01. read(r)   = for reading file   and it is the default mode if no mode as a argument passed
+02. write(w)  = for writing file   and also creates new file and it rewrites the file 
+03. append(a) = for appending file and also creates new file
+04. create(x) = for creating file  and gives error if file already exists 
+05. text(t)   = for text file      and eg open("file_name"," rt ")      
+06. binary(b) = for binary file    and eg open("file_name"," rb ")
+
+# with statement 
+syntax : with open(A1 , A2) as f: 
+Through this there is no need to use close() function
+
+# Methods in file
+01. readline()   method = reads only one line
+02. redlines()   method = reads every line and creates list of all lines
+03. writelines() method = writes all elements of list, tuple etc in file
+
+# functions in file_name
+01. seek()     = f.seek(5) it will start after 5 bytes in file.
+               data = f.read(6) it will read 6 bytes after the first five seeked bytes.   
+02. tell()     = f.tell() it will tell how many bytes are seeked
+03. truncate() = f.truncate(250) it will set the size of bytes in file 
