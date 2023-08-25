@@ -7,8 +7,8 @@
 # except Exception as e:             #e = tells error
 #     print(e)                    
 
-# print("some imp lines of code")
-# print("end of program")
+print("some imp lines of code")
+print("end of program")
 
 '''02'''
 # a = input("enter the no : ")
